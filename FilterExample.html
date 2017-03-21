@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Practise</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<body>
+/*converting every text to lowercase*/ <br />
+Name : <input type="text" ng-model="name" /><br />
+Welcome {{name|lowercase}} 
+<br />
+<br />
+/*converting every text to uppercase*/ <br />
+Name : <input type="text" ng-model="name" /><br />
+Welcome {{name|uppercase}}
+<br />
+<br />
+/*accept only numbers*/ <br />
+Currency : <input type="text" ng-model="price" /><br />
+Amount {{price|number}} 
+<br />
+<br />
+/*prefix the Rs. before amount*/ <br />
+Currency : <input type="text" ng-model="price" /><br />
+Amount {{price|currency : "Rs. "}} 
+<br />
+<br />
+/*precision upto 3 decimal digits*/ <br />
+Currency : <input type="text" ng-model="price" /><br />
+Amount {{price|currency:"Rs. ":3}} 
+ 
+</body>
+</html>
